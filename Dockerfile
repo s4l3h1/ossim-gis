@@ -1,5 +1,5 @@
-FROM ubuntu:16.04
-MAINTAINER Johnny T. <john@exogenesis.solutions>
+FROM ubuntu:xenial
+MAINTAINER Muhammad Salehi <salehi1994@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
