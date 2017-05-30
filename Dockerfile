@@ -61,10 +61,6 @@ RUN cmake .. \
 
 RUN make && make install
 
-RUN useradd -ms /bin/bash ossimuser
-USER ossimuser
-WORKDIR /home/ossimuser
-
 # Set up the preferences file
 RUN echo 'plugin.file1: /usr/local/lib/ossim/plugins/libossim_potrace_plugin.so' > ~/ossim_preferences
 ENV OSSIM_PREFS_FILE=/home/ossimuser/ossim_preferences
