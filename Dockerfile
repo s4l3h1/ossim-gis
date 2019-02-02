@@ -16,7 +16,8 @@ RUN apt-get update \
     libopenthreads-dev \
     libgeos++-dev \
     libgeos-dev \
-    libpotrace-dev
+    libpotrace-dev \
+    libjsoncpp-dev
 
 
 ENV OSSIM_DEV_HOME=/usr/local/src/ossim
