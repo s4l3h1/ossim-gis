@@ -16,7 +16,8 @@ RUN apt-get update \
     libopenthreads-dev \
     libgeos++-dev \
     libgeos-dev \
-    libpotrace-dev
+    libpotrace-dev \
+    libjsoncpp-dev
 
 
 ENV OSSIM_DEV_HOME=/usr/local/src/ossim
@@ -63,4 +64,4 @@ RUN make && make install
 
 # Set up the preferences file
 RUN echo 'plugin.file1: /usr/local/lib/ossim/plugins/libossim_potrace_plugin.so' > ~/ossim_preferences
-ENV OSSIM_PREFS_FILE=/home/ossimuser/ossim_preferences
+ENV OSSIM_PREFS_FILE=/root/ossim_preferences
